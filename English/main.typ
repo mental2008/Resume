@@ -44,7 +44,7 @@ Ph.D. in Computer Science and Engineering, Advisor: *Wei Wang* #h(1fr) Sep. 2020
 - Research Domain: Cluster Management, Model Serving Systems, Resource Scheduling
 
 #link("https://www.scut.edu.cn/en/")[*South China University of Technology*] #h(1fr) *Guangzhou, China* \
-B.Eng. in Computer Science and Technology, Elite Class (GPA 3.82/4) #h(1fr) Sep. 2016 -- Jul. 2020 \
+B.Eng. in Computer Science and Technology, Elite Class (GPA: 3.82/4) #h(1fr) Sep. 2016 -- Jul. 2020 \
 - National Scholarship, The First Prize Scholarship
 
 == Research and Selected Projects
