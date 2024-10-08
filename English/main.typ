@@ -53,18 +53,18 @@ B.Eng. in Computer Science and Technology, Elite Class (GPA 3.82/4) #h(1fr) Sep.
 I have a broad interest in resource management for large-scale data centers / AI infrastructure. Specifically, my research focuses on: (a) improving resource efficiency for AI/GPU clusters; (b) building efficient and low-cost AI model serving systems. \
 
 #link("https://arxiv.org/abs/2407.02031")[*SwiftDiffusion: Efficient Diffusion Model Serving with Add-on Modules*] #h(1fr) (review, 2407.02031) \
-#text(style: "italic", size: 8pt)[*Lingyun Yang*, Suyi Li, Xiaoxiao Jiang, Hanfeng Lu, Zhipeng Di, Weiyi Lu, Jiawei Chen, Kan Liu, Yinghao Yu, Tao Lan, Guodong Yang, Lin Qu, Liping Zhang, Wei Wang] \
+#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Suyi Li, Xiaoxiao Jiang, Hanfeng Lu, Dakai An, Zhipeng Di, Weiyi Lu, Jiawei Chen, Kan Liu, Yinghao Yu, Tao Lan, Guodong Yang, Lin Qu, Liping Zhang, Wei Wang] \
 - Built an efficient text-to-image system that generates images with diffusion models and add-on modules (i.e., ControlNets and LoRAs).
 - Incorporated system designs, e.g., ControlNet-as-a-Service, async bounded LoRA loading, latent parallelelism for CFG computation.
 - Achieved up to *7.8×* in serving latency and *1.6×* in throughput without compromising image quality.
 
 *Prism: GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale* #h(1fr) (review) \
-#text(style: "italic", size: 8pt)[*Lingyun Yang*, Yongchen Wang, Yinghao Yu, Qizhen Weng, Jianbo Dong, Kan Liu, Chi Zhang, Yanyi Zi, Hao Li, Zechao Zhang, Nan Wang, Yu Dong, Menglei Zheng, Lanlan Xi, Xiaowei Lu, Liang Ye, Guodong Yang, Binzhang Fu, Tao Lan, Liping Zhang, Lin Qu, Wei Wang] \
+#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Yongchen Wang, Yinghao Yu, Qizhen Weng, Jianbo Dong, Kan Liu, Chi Zhang, Yanyi Zi, Hao Li, Zechao Zhang, Nan Wang, Yu Dong, Menglei Zheng, Lanlan Xi, Xiaowei Lu, Liang Ye, Guodong Yang, Binzhang Fu, Tao Lan, Liping Zhang, Lin Qu, Wei Wang] \
 - Proposed a GPU-disaggregated DLRM serving system to eliminate resource mismatch and meet elastic demand; leveraged RDMA network to offload computation on separate GPU and CPU nodes; resource-aware graph partitioning; topology-aware scheduling.
 - In daily scenarios (e.g., a crowded GPU cluster with > 90% allocation rate), reduced CPU fragments by *53%* and GPU fragments by *27%*; In the Double 11 Shopping Festival, saved up to *90%* of GPUs when loaning GPU servers from training clusters.
 
 #link("https://www.usenix.org/conference/atc23/presentation/weng")[*Beware of Fragmentation: Scheduling GPU-Sharing Workloads with Fragmentation Gradient Descent*] #h(1fr) (ATC'23) \
-#text(style: "italic", size: 8pt)[*Lingyun Yang*, Qizhen Weng, Yinghao Yu, Wei Wang, Xiaochuan Tang, Guodong Yang, Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/hkust-adsl/kubernetes-scheduler-simulator")[hkust-adsl/kubernetes-scheduler-simulator] \
+#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Qizhen Weng, Yinghao Yu, Wei Wang, Xiaochuan Tang, Guodong Yang, Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/hkust-adsl/kubernetes-scheduler-simulator")[hkust-adsl/kubernetes-scheduler-simulator] \
 - Formally quantified *statistical* GPU resource fragments in shared GPU clusters.
 - Proposed the fragmentation gradient descent (FGD) scheduling algorithm to reduce resource fragmentation.
 - Reduced unallocated GPUs by up to *49%* compared to state-of-the-art scheduling policies.
@@ -75,7 +75,7 @@ I have a broad interest in resource management for large-scale data centers / AI
 - Designed and implemented the node-level agent and the cluster-level controller.
 
 #link("https://dl.acm.org/doi/10.1145/3472883.3486987")[*Morphling: Fast, Near-Optimal Auto-Configuration for Cloud-Native Model Serving*] #h(1fr) (SoCC'21) \
-#text(style: "italic", size: 8pt)[*Lingyun Yang*, Luping Wang, Yinghao Yu, Wei Wang, Bo Li, Xianchao Sun, Jian He, and Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/kubedl-io/morphling")[kubedl-io/morphling]
+#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Luping Wang, Yinghao Yu, Wei Wang, Bo Li, Xianchao Sun, Jian He, Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/kubedl-io/morphling")[kubedl-io/morphling]
 - An auto-configuration framework for AI serving on Kubernetes; part of Alibaba's open-sourced #link("https://github.com/kubedl-io/kubedl")[KubeDL], a #link("https://landscape.cncf.io/?item=provisioning--automation-configuration--kubedl")[CNCF sandbox] project.
 - Combined meta-learning and bayesian optimization to quickly find the *optimal* resource configuration (e.g., CPU cores, GPU memory, GPU timeshare, GPU type) and runtime parameters (i.e., batch size).
 

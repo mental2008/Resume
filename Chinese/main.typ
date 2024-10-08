@@ -59,19 +59,19 @@
 我关注于大规模数据中心中的资源管理问题，尤其聚焦于 AI 基础设施。过去近 4 年，我在阿里巴巴开展了深入的产学研合作。我的研究工作主要包括两个方面：（一）提高 AI/GPU 集群的资源利用效率；（二）构建高效且低成本的 AI 模型推理系统。
 
 #link("https://arxiv.org/abs/2407.02031")[*SwiftDiffusion：高效的文生图模型推理系统*] #h(1fr) (review, 2407.02031) \
-#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Suyi Li, Xiaoxiao Jiang, Hanfeng Lu, Zhipeng Di, Weiyi Lu, Jiawei Chen, Kan Liu, Yinghao Yu, Tao Lan, Guodong Yang, Lin Qu, Liping Zhang, Wei Wang] \
+#text(style: "italic", size: 7.4pt)[*Lingyun Yang*, Suyi Li, Xiaoxiao Jiang, Hanfeng Lu, Dakai An, Zhipeng Di, Weiyi Lu, Jiawei Chen, Kan Liu, Yinghao Yu, Tao Lan, Guodong Yang, Lin Qu, Liping Zhang, Wei Wang] \
 - 构建了文生图推理系统 SwiftDiffusion，高效整合了 diffusion 模型和 add-on 模块（如 ControlNets、LoRAs）。
 - 基于对 50w 条生产请求 trace 的特征研究，提出多个系统设计如：服务化 ControlNet、异步 LoRA 加载、latent 并行计算。
 - 在保障图片质量的前提下，能够最多降低 *7.8×* 的推理时延、提高 *1.6×* 的吞吐量。
 
 *Prism：针对深度学习推荐模型的 GPU 分离式推理系统* #h(1fr) (review) \
 // *Prism: GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale* #h(1fr) (review) \
-#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Yongchen Wang, Yinghao Yu, Qizhen Weng, Jianbo Dong, Kan Liu, Chi Zhang, Yanyi Zi, Hao Li, Zechao Zhang, Nan Wang, Yu Dong, Menglei Zheng, Lanlan Xi, Xiaowei Lu, Liang Ye, Guodong Yang, Binzhang Fu, Tao Lan, Liping Zhang, Lin Qu, Wei Wang] \
+#text(style: "italic", size: 7.4pt)[*Lingyun Yang*, Yongchen Wang, Yinghao Yu, Qizhen Weng, Jianbo Dong, Kan Liu, Chi Zhang, Yanyi Zi, Hao Li, Zechao Zhang, Nan Wang, Yu Dong, Menglei Zheng, Lanlan Xi, Xiaowei Lu, Liang Ye, Guodong Yang, Binzhang Fu, Tao Lan, Liping Zhang, Lin Qu, Wei Wang] \
 - 针对在线推荐服务的推理场景，设计了一种 GPU-CPU 分离式异构架构，通过 RDMA 网络拉远部署计算图，消除资源不匹配；支持拓扑感知调度、基于资源消耗的切图策略。
 - 在日常调度场景下可减少 *53%* CPU 碎片和 *27%* GPU 碎片；双 11 期间借调训练集群的 GPU 服务器最多可节省 *90%* GPU。
 
 #link("https://www.usenix.org/conference/atc23/presentation/weng")[*FGD：大规模集群中 GPU 资源碎片的量化及调度策略优化*] #h(1fr) (ATC'23) \
-#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Qizhen Weng, Yinghao Yu, Wei Wang, Xiaochuan Tang, Guodong Yang, Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/hkust-adsl/kubernetes-scheduler-simulator")[hkust-adsl/kubernetes-scheduler-simulator] \
+#text(style: "italic", size: 7.4pt)[*Lingyun Yang*, Qizhen Weng, Yinghao Yu, Wei Wang, Xiaochuan Tang, Guodong Yang, Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/hkust-adsl/kubernetes-scheduler-simulator")[hkust-adsl/kubernetes-scheduler-simulator] \
 - 量化分析了大规模 GPU 共享后集群中普遍存在的资源碎片问题，并提出了创新的碎片梯度下降调度算法。
 - 相较于最优的调度策略可以显著减少 *49%* 的 GPU 碎片。
 
@@ -80,7 +80,7 @@
 - 设计并实现了单机管控 agent 和全局 controller。Agent 周期性上报节点的资源使用情况，动态分配 GPU 资源给容器。中心侧的 Controller 管理集群账本，计算可超卖资源量，为集群调度器提供调度决策指引。
 
 #link("https://dl.acm.org/doi/10.1145/3472883.3486987")[*Morphling：针对通用 AI 推理服务的自动化参数配置框架*] #h(1fr) (SoCC'21) \
-#text(style: "italic", size: 7.5pt)[*Lingyun Yang*, Luping Wang, Yinghao Yu, Wei Wang, Bo Li, Xianchao Sun, Jian He, and Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/kubedl-io/morphling")[kubedl-io/morphling]
+#text(style: "italic", size: 7.4pt)[*Lingyun Yang*, Luping Wang, Yinghao Yu, Wei Wang, Bo Li, Xianchao Sun, Jian He, Liping Zhang] #h(1fr) #octique-inline("mark-github") #link("https://github.com/kubedl-io/morphling")[kubedl-io/morphling]
 - 作为阿里巴巴开源的 #link("https://github.com/kubedl-io/kubedl")[KubeDL] 其中的一个独立子项目，成为云原生计算基金会（CNCF）#link("https://landscape.cncf.io/?item=provisioning--automation-configuration--kubedl")[sandbox] 项目。
 - 结合元学习和贝叶斯优化算法，可快速搜索到最优的资源配置（如 CPU 核数、GPU 显存、GPU 时间片、GPU 卡型）和运行时参数（如批处理大小）。
 
